@@ -24,7 +24,7 @@ namespace MathMagician
                 if (parsed)
                 {
                   NaturalNumbers nats = new NaturalNumbers();
-                  nats.ToString(nats.GetSequence(length));
+                  Console.WriteLine(nats.ToString(nats.GetSequence(length)));
                 }
             }
             else
