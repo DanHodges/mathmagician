@@ -52,7 +52,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FibonacciTest.cs" />
     <Compile Include="NaturalNumbersTests.cs" />
+    <Compile Include="PrimeNumberTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EvenTests.cs" />
   </ItemGroup>

@@ -13,7 +13,7 @@ namespace MathMagicianTests
             EvenNumbers even = new EvenNumbers();
             Assert.IsNotNull(even);
         }
-
+        
         [TestMethod]
         public void Even_shouldPrintFirstNumber()
         {

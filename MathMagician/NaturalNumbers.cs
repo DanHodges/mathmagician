@@ -23,7 +23,6 @@ namespace MathMagician
             return first;
         }
 
-
         public virtual int GetNext(int x)
         {
             return x + increment;
@@ -38,7 +37,6 @@ namespace MathMagician
         {
             List<int> output = new List<int>();
             output.Add(GetFirst());
-            //int[] output = new int[length];
             while (output.Count < length)
             {
                 output.Add(GetNext(output.Last()));

@@ -27,6 +27,32 @@ namespace MathMagician
                   Console.WriteLine(nats.ToString(nats.GetSequence(length)));
                 }
             }
+            if (response == "Fibonacci numbers")
+            {
+                Console.WriteLine("How many?");
+                Console.WriteLine(prompt);
+                int length;
+                string response_length = Console.ReadLine();
+                bool parsed = int.TryParse(response_length, out length);
+                if (parsed)
+                {
+                    FibNumbers fibs = new FibNumbers();
+                    Console.WriteLine(fibs.ToString(fibs.GetSequence(length)));
+                }
+            }
+            if (response == "Prime numbers")
+            {
+                Console.WriteLine("How many?");
+                Console.WriteLine(prompt);
+                int length;
+                string response_length = Console.ReadLine();
+                bool parsed = int.TryParse(response_length, out length);
+                if (parsed)
+                {
+                    PrimeNumbers primes = new PrimeNumbers();
+                    Console.WriteLine(primes.ToString(primes.GetSequence(length)));
+                }
+            }
             else
             {
                 Console.WriteLine("Whoops! Try a number next time.");
