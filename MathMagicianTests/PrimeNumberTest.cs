@@ -23,34 +23,34 @@ namespace MathMagicianTests
             Assert.AreEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void Prime_shouldPrintNextNumber()
-        //{
-        //    PrimeNumbers Prime = new PrimeNumbers();
-        //    int input = 2;
-        //    int expected = 4;
-        //    int actual = Prime.GetNext(input);
-        //    Assert.AreEqual(expected, actual);
-        //}
+        [TestMethod]
+        public void Prime_shouldPrintNextNumber()
+        {
+            PrimeNumbers Prime = new PrimeNumbers();
+            int input = 3;
+            int expected = 5;
+            int actual = Prime.GetNext(input);
+            Assert.AreEqual(expected, actual);
+        }
 
-        //[TestMethod]
-        //public void Prime_shouldPrintAVariableSequenceOfNumbers()
-        //{
-        //    PrimeNumbers Prime = new PrimeNumbers();
-        //    int input = 8;
-        //    int[] expected = new int[] { 2, 4, 6, 8, 10, 12, 14, 16 };
-        //    int[] actual = Prime.GetSequence(input);
-        //    CollectionAssert.AreEqual(expected, actual);
-        //}
+        [TestMethod]
+        public void Prime_shouldPrintAVariableSequenceOfNumbers()
+        {
+            PrimeNumbers Prime = new PrimeNumbers();
+            int input = 8;
+            int[] expected = new int[] { 1, 2, 3, 5, 7, 11, 13,17 };
+            int[] actual = Prime.GetSequence(input);
+            CollectionAssert.AreEqual(expected, actual);
+        }
 
-        //[TestMethod]
-        //public void Prime_printSequenceOfNumbers()
-        //{
-        //    PrimeNumbers Prime = new PrimeNumbers();
-        //    int length = 7;
-        //    string expected = "2 4 6 8 10 12 14";
-        //    string actual = Prime.ToString(Prime.GetSequence(length));
-        //    Assert.AreEqual(expected, actual);
-        //}
+        [TestMethod]
+        public void Prime_printSequenceOfNumbers()
+        {
+            PrimeNumbers Prime = new PrimeNumbers();
+            int length = 7;
+            string expected = "1 2 3 5 7 11 13";
+            string actual = Prime.ToString(Prime.GetSequence(length));
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
